@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Checkout - VetVibes</title>
+    <link href="img/Logo.png" rel="icon">
+</head>
+<body>
+    <header>
+        <div class="TitleAndLogo">
+            <a href="index.html">
+                <div class="Image">
+                    <img src="img/Logo.png" height="100px" width="100px">
+                </div>
+                <div class="Title">
+                    <h1 id="title">VetVibes</h1>
+                </div>
+            </a>
+            <div class="login-cart">
+                <a href="cart.html" class="cart-button">
+                    <img src="img/cart1.jpg" alt="Cart" class="cart-icon">
+                </a>
+            </div>
+            <div id="login-button">
+                <a href="LoginPage.html"><button type="button" class="login-btn">Login</button></a>
+            </div>
+        </div>
+    </header>
+    <nav class="NavBar">
+        <div class="navigation">
+            <a class="navHome" href="index.html">Home</a>
+            <a class="navAbout" href="about.html">About Us</a>
+            <a class="navProduct" href="product.html">Products</a>
+            <a class="navContact" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+
+        <!-- Cart Summary -->
+        <div id="cart-container"></div> <!-- Dynamically Populated -->
+        <div class="cart-summary" id="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">₹0</span>
+            </div>
+            <div class="summary-row">
+                <span>Delivery Charge:</span>
+                <span id="delivery-charge">₹50</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">₹0</span>
+            </div>   
+        </div>    
+
+        <!-- Shipping and Payment Details -->
+        <div class="checkout-form">
+            <h2>Shipping Information</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <h2>Payment Method</h2>
+                <div class="payment-methods">
+                    <label for="payment-method">Choose a payment method:</label>
+                </br>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="credit-card">Credit Card(Unavailable)</option>
+                        <option value="debit-card">Debit Card(Unavailable)</option>
+                        <option value="net-banking">Net Banking(Unavailable)</option>
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                </div>
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-light mt-5 py-5">
+            <div class="NavBar">
+                <div>
+                    <h5 class="QuickLinks">Quick Links</h5>
+                    <hr>
+                    <div class="navigation">
+                        <a class="navHome" href="index.html">Home</a>
+                        <a class="navAbout" href="about.html">About Us</a>
+                        <a class="navProduct" href="product.html">Products</a>
+                        <a class="navContact" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CopyRight">
+            <p style="color: white;">&copy; <a style="text-decoration: underline;" href="index.html">VetVibes</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

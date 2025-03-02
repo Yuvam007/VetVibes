@@ -1,0 +1,49 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.add-to-cart {
+    background-color: #7AB730;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.product-details{
+    padding: 10px;
+}
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+.product-details p{
+    color: black;
+}
+h2{
+    font-family: Bebas Neue;
+}
+.price {
+    display: block; 
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    font-family: Bebas Neue;
+    text-align: center;
+}

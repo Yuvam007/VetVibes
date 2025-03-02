@@ -1,0 +1,427 @@
+body{
+    background-color: black;
+}
+header{
+    background-color: black; 
+    padding: 20px 0;
+}
+footer{
+    background-color:#7AB730;
+    padding: 1px;
+    height: 17rem;
+    font-family: Bebas Neue;
+}
+#title{
+    color: #7AB730;
+    font-size: 80px;
+    margin: 0; 
+    padding: 0;
+    white-space: nowrap;
+}
+#subheading{
+    color:#7AB730;
+    font-size: 60px;
+    height: 50px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Bebas Neue;
+    color: whitesmoke;
+}
+#MoreAbout{
+    text-align: center;
+    font-size: 21px;
+    color: whitesmoke;
+    font-family: Bebas Neue;
+    padding: 15px;
+}
+.dog-image{
+    float: left;
+    margin-right: 15px;
+    width: 30rem;
+    height: auto;
+}
+p{
+    text-align: center;
+    font-size: 21px;
+    color: whitesmoke;
+    font-family: Bebas Neue;
+    padding: 10px
+}
+.navigation{
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+}
+.navHome,.navAbout,.navProduct,.navContact{
+    padding: 16px;
+    font-size: 27px;
+    color: black;
+    font-family: Bebas Neue;
+    font-weight: bold;
+}
+.navHome:hover,.navAbout:hover,.navProduct:hover,.navContact:hover{
+    color: rgba(26, 24, 24, 0.384);
+}
+button{
+    background-color: #7AB730;
+    border: none;
+    padding: 11px;
+    font-size: 20px;
+    font-family: Bebas Neue;
+    margin-bottom: 2%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.Button:hover{
+    opacity: 0.7;
+}
+.Image img{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+.TitleAndLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavBar{
+    display: flex;
+    justify-content: center;
+    background-color: #7AB730;
+    padding: 10px;
+}
+.TitleAndLogo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.QuickLinks{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 16px;    
+}
+.CopyRight{
+    color: white;
+    font-size: 10px;
+}
+.CopyRight a{
+    color: white;
+}
+footer{
+    height: 0.5%;
+    margin-top: 5%;
+}
+#login-button a button{
+    font-size: 22px;
+    height: 60px;
+    width: 66px;
+}
+#login-button{
+    position: absolute;
+    right: 25px;
+    border-radius: 10px;
+}
+#login-button:hover{
+    opacity: 0.8;
+}
+.price{
+    color: white;
+}
+.add-to-cart:hover{
+    opacity: 0.8;
+}
+.dog-image-home{
+    display: block;
+    margin: 0 auto 20px auto; 
+    width: 31rem;
+    height: auto;
+}
+.login-cart{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    margin-right: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+.login-cart a img{
+    margin-top: 15px;
+    width: 70px; 
+    height: 70px;
+    cursor: pointer; 
+    border-radius: 40px;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product-item{
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.add-to-cart{
+    background-color: #7AB730;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.product-details{
+    padding: 10px;
+    text-align: center;
+}
+.add-to-cart:hover{
+    opacity: 0.8;
+}
+.product-details p{
+    color: black;
+    text-align: center;
+}
+h2{
+    font-family: Bebas Neue;
+}
+.price{
+    display: block; 
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+    font-family: Bebas Neue;
+    text-align: center;
+}
+.form-container{
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.7);
+    font-family: Bebas Neue;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type = "text"],
+input[type = "email"],
+textarea[type = "message"]{
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0px 22px 0px;
+    display: inline-block;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Bebas Neue;
+}
+input[type = "text"]:focus,
+input[type = email]:focus{
+    background-color: white;
+    outline: none;
+}
+.registerbtn{
+    background-color: #7AB730;
+    color: black;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+.registerbtn:hover{
+    opacity: 0.8;
+}
+::placeholder{
+    font-family: Bebas Neue;
+    font-size: 20px;
+}
+textarea{
+    outline: none;
+}
+.contact-details p{
+    text-align: center;
+}
+.cart-container,.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+.cart-item-checkbox {
+    width: 20px;
+    height: 20px;
+}
+.cart-item-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cart-item-details h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+.cart-item-details p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+.cart-item-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quantity-btn {
+    padding: 5px 10px;
+    background-color: #7AB730;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+.quantity {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 15%;
+    font-size: 18px;
+    color: black;
+}
+.remove-selected {
+    background-color: #7AB730;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.remove-selected:hover,.quantity-btn:hover{
+    opacity: 0.8;
+}
+.cart-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.total {
+    font-weight: bold;
+    font-size: 1.2em;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+.empty-cart {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #888;
+    margin-top: 20px;
+}
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #7AB730;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.checkout-btn:hover,.continue-shopping:hover{
+    opacity: 0.8;
+}
+.continue-shopping {
+    width: 100%;
+    padding: 15px;
+    background-color: #7AB730;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#checkoutForm{
+    font-family: Bebas Neue;
+    font-size: 20px;
+}
+option,select{
+    font-size: 15px;
+    font-family: Bebas Neue;
+    border: none;
+}
+select{
+    width: 200px;
+    height: 30px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+
+}
+.payment-methods label{
+    font-size: 25px;
+}
+.cart-summary{
+    color: black;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-weight: bold;
+}

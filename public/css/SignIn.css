@@ -1,0 +1,118 @@
+body {
+    font-family: Bebas Neue;
+    background: #7AB730;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+}
+.TitleAndLogo {
+    display: flex;
+    align-items: center;
+}
+.TitleAndLogo a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.TitleAndLogo img {
+    margin-right: 10px;
+    border-radius: 100px;
+}
+#title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #7AB730;
+}
+.login-signup {
+    display: flex;
+    gap: 15px;
+}
+#login-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#login-button {
+    color: black;
+}
+.login-button:hover {
+    opacity: 0.8;
+}
+.login-container, .signup-container {
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: fixed ;
+}
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+}
+input::placeholder {
+    color: black;
+}
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+    background: #7AB730;
+    color: black;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold;
+    font-family: Bebas Neue;
+}
+button:hover {
+    opacity: 0.8;
+}
+p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #7AB730;
+    font-weight: bold;
+}
+a {
+    color: #7AB730;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: none;
+}
+#login-button a button{
+    font-size: 22px;
+    height: 60px;
+    width: 60px;
+}

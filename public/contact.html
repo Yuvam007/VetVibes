@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Contact Us - VetVibes</title>
+    <link href="img/Logo.png" rel="icon"/>
+</head>
+<body>
+    <!-- Title And Logo -->
+    <header>
+        <div class="TitleAndLogo">
+            <a href="index.html">
+                <div class="Image">
+                    <img src="img/Logo.png" height="100px" width="100px">
+                </div>
+                <div class="Title">
+                    <h1 id="title">VetVibes</h1>
+                </div>
+                <div id="login-button">
+                    <a href="LoginPage.html"><button type="button" style="border-radius: 8px; font-size: 20px; cursor: pointer;">Login</button></a>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- Title And Logo End -->
+    <!-- Navigation Bar -->
+    <nav class="NavBar">
+        <div class="navigation">
+            <a class="navHome" href="index.html">Home</a>
+            <a class="navAbout" href="about.html">About Us</a>
+            <a class="navProduct" href="product.html">Products</a>
+            <a class="navContact" href="contact.html">Contact</a>
+        </div>
+    </nav>   
+    <!-- Navigation Bar End -->
+    <!-- Contact Us Section -->
+    <div class="contact-container">
+        <h1 id="subheading">Contact Us</h1>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <div class="form-container">
+                <form action="">
+                    <h1 style="text-align: center; color: black;">Send us a message</h1>
+                <hr/>
+                <label for="name">Name: </label>
+                <input type="text" placeholder="Enter Name" name="name" id ="name" required/>
+                <hr/>
+                <label for="Email">Email: </label>
+                <input type="email" placeholder="Enter Email" name="em" id="em" required>
+                <hr/>
+                <label for="message">Your Message: </label>
+                <textarea type="message" placeholder="Enter Your Message" name="um" id="um" rows="15" required></textarea>
+                </form>
+            <button type="submit" class="registerbtn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us Section End -->   
+    
+    <!-- Footer -->
+    <footer>   
+        <div>
+            <div class="NavBar">
+                <div>
+                    <h5 class="QuickLinks">Quick Links</h5>
+                    <hr>
+                    <div class="navigation">
+                        <a class="navHome" href="index.html">Home</a>
+                        <a class="navAbout" href="about.html">About Us</a>
+                        <a class="navProduct" href="product.html">Products</a>
+                        <a class="navContact" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="CopyRight">
+                <div>
+                    <p>&copy; <a style="color: white; text-decoration: underline;" href="index.html">VetVibes</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/auth.js"></script>
+    <!-- Footer End -->
+</body>
+</html>

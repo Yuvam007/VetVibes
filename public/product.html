@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+    <title>VetVibes - Products</title>
+    <link href="img/Logo.png" rel="icon">
+</head>
+<body>
+    <header>
+        <div class="TitleAndLogo">
+            <a href="index.html">
+                <div class="Image">
+                    <img src="img/Logo.png" height="100px" width="100px">
+                </div>
+                <div class="Title">
+                    <h1 id="title">VetVibes</h1>
+                </div>
+                <div class="login-cart">
+                    <a href="cart.html" class="cart-button">
+                        <img src="img/cart1.jpg" alt="Cart" class="cart-icon">
+                    </a>
+                </div>
+                <div id="login-button">
+                    <a href="LoginPage.html"><button type="button" style="border-radius: 8px; font-size: 20px;">Login</button></a>
+                </div>
+            </a>
+        </div>
+    </header>
+    <nav class="NavBar">
+        <div class="navigation">
+            <a class="navHome" href="index.html">Home</a>
+            <a class="navAbout" href="about.html">About Us</a>
+            <a class="navProduct" href="product.html">Products</a>
+            <a class="navContact" href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="product-container">
+        <h1 id="subheading">Our Products</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="img/product1.png" alt="Product 1">
+                <div class="product-details">
+                    <h2>VetVibes Calming Chews</h2>
+                    <p> Stress less, wag more! 
+                        Soft chews with natural ingredients to soothe anxiety and promote relaxation in your furry friend. 
+                        Perfect for travel, vet visits, or thunderstorms.
+                    </p>
+                    <span class="price">&#8377;500</span>
+                    <button class="add-to-cart" onclick="addToCart(1, 'VetVibes Calming Chews', 500, 'Stress less, wag more! Soft chews with natural ingredients to soothe anxiety and promote relaxation in your furry friend.')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="img/product2.png" alt="Product 2">
+                <div class="product-details">
+                    <h2>VetVibes Flea & Tick Prevention</h2>
+                    <p>
+                        No bites, all the fun! Protect your pet from pesky parasites with this easy-to-use topical solution. 
+                        Keep them itch-free and safe from disease.
+                    </p>
+                    <span class="price">&#8377;250</span>
+                    <button class="add-to-cart" onclick="addToCart(2, 'VetVibes Flea & Tick Prevention', 250, 'No bites, all the fun! Protect your pet from pesky parasites with this easy-to-use topical solution.')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="img/product3.png" alt="Product 3">
+                <div class="product-details">
+                    <h2>VetVibes Multivitamin & Mineral Supplement</h2>
+                    <p>
+                        Boost their best life! Give your pet's health a daily boost with these essential vitamins and minerals. 
+                        Support their immune system and overall well-being.
+                    </p>    
+                    <span class="price">&#8377;800</span>
+                    <button class="add-to-cart" onclick="addToCart(3, 'VetVibes Multivitamin & Mineral Supplement', 800, 'Boost their best life! Give your pet\'s health a daily boost with these essential vitamins and minerals.')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="img/product4.png" alt="Product 4">
+                <div class="product-details">
+                    <h2>VetVibes Digestive Aid</h2>
+                    <p>
+                        Happy gut, happy pup! Soothe sensitive stomachs and improve digestion with this probiotic-rich powder. 
+                        Say goodbye to gas and bloating, hello to a healthy microbiome.
+                    </p>
+                    <span class="price">&#8377;450</span>
+                    <button class="add-to-cart" onclick="addToCart(4, 'VetVibes Digestive Aid', 450, 'Happy gut, happy pup! Soothe sensitive stomachs and improve digestion with this probiotic-rich powder.')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="img/product5.png" alt="Product 5">
+                <div class="product-details">
+                    <h2>VetVibes Joint Health Formula</h2>
+                    <p>
+                        Move freely, play happily! Support your pet's joint health and mobility with these powerful tablets. 
+                        Reduce pain and inflammation so they can enjoy their golden years.
+                    </p>
+                    <span class="price">&#8377;750</span>
+                    <button class="add-to-cart" onclick="addToCart(5, 'VetVibes Joint Health Formula', 750, 'Move freely, play happily! Support your pet\'s joint health and mobility with these powerful tablets.')">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="img/product6.png" alt="Product 6">
+                <div class="product-details">
+                    <h2>VetVibes Skin & Coat Support</h2>
+                    <p> 
+                        Shine bright, bark loud! Nourish your pet's skin and coat from within. 
+                        These capsules packed with omega fatty acids and vitamins will have them looking and feeling their best.
+                    </p>
+                    <span class="price">&#8377;350</span>
+                    <button class="add-to-cart" onclick="addToCart(6, 'VetVibes Skin & Coat Support', 350, 'Shine bright, bark loud! Nourish your pet\'s skin and coat from within with omega fatty acids and vitamins.')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-light mt-5 py-5">
+            <div class="NavBar">
+                <div>
+                    <h5 class="QuickLinks">Quick Links</h5>
+                    <hr>
+                    <div class="navigation">
+                        <a class="navHome" href="index.html">Home</a>
+                        <a class="navAbout" href="about.html">About Us</a>
+                        <a class="navProduct" href="product.html">Products</a>
+                        <a class="navContact" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CopyRight">
+            <p style="color: white;">&copy; <a style="text-decoration: underline;" href="index.html">VetVibes</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
