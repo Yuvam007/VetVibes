@@ -9,24 +9,26 @@
 ## **Getting Started**  
 ### **1️ Clone the Repository**  
 Open a terminal and run:  
+
 git clone https://github.com/Yuvam007/VetVibes.git
 cd VetVibes
+
 ### **2️ Install Dependencies**  
 Run the following command to install required Node.js packages:  
 npm install
 ### **3️ Set Up Environment Variables**  
 Create a `db.env` file in the root directory and add:  
-```env
+
 MONGO_URI=mongodb://localhost:27017/VetVibes
 PORT=3000
-```
+
 If you're using **MongoDB Atlas**, replace `MONGO_URI` with your actual cloud database connection string.  
 
-### **4️⃣ Start MongoDB**  
+### **4️ Start MongoDB**  
 - If using **local MongoDB**, start it with:  
   mongod
 - If using **MongoDB Atlas**, ensure your connection string is correct in `db.env`.
-### **5️⃣ Start the Server**  
+### **5️ Start the Server**  
 Run the following command to start the backend server:  
 
 node server.js
