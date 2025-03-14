@@ -6,6 +6,30 @@
     <link href="img/Logo.png" rel="icon"/>
 </head>
 <body>
+    <style>
+        #um{
+            width: 37.6rem;
+            height: 30rem;
+            border: none;
+            font-family: Bebas Neue;
+            font-size: 20px;
+            background-color: #F5F5F5;
+        }
+        #um:focus{
+            background-color: white;
+        }
+        #um::placeholder{
+            font-size: 20px;
+            padding: 1px;
+        }
+    </style>
+    <script>
+        function ContactSuccess(){
+            alert("Thank You For Contacting Us!");
+            // Reset the form after the alert
+            document.getElementById("contactForm").reset();
+        }
+    </script>
     <!-- Title And Logo -->
     <header>
         <div class="TitleAndLogo">
@@ -17,7 +41,9 @@
                     <h1 id="title">VetVibes</h1>
                 </div>
                 <div id="login-button">
-                    <a href="LoginPage.html"><button type="button" style="border-radius: 8px; font-size: 20px; cursor: pointer;">Login</button></a>
+                    <a href="LoginPage.html">
+                        <button type="button" style="border-radius: 8px; font-size: 20px; cursor: pointer;">Login</button>
+                    </a>
                 </div>
             </a>
         </div>
@@ -39,24 +65,25 @@
         <div class="contact-form">
             <h2>Send Us a Message</h2>
             <div class="form-container">
-                <form action="">
+                <!-- Added an id "contactForm" to the form -->
+                <form id="contactForm" action="">
                     <h1 style="text-align: center; color: black;">Send us a message</h1>
-                <hr/>
-                <label for="name">Name: </label>
-                <input type="text" placeholder="Enter Name" name="name" id ="name" required/>
-                <hr/>
-                <label for="Email">Email: </label>
-                <input type="email" placeholder="Enter Email" name="em" id="em" required>
-                <hr/>
-                <label for="message">Your Message: </label>
-                <textarea type="message" placeholder="Enter Your Message" name="um" id="um" rows="15" required></textarea>
+                    <hr/>
+                    <label for="name">Name: </label>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required/>
+                    <hr/>
+                    <label for="Email">Email: </label>
+                    <input type="email" placeholder="Enter Email" name="em" id="em" required>
+                    <hr/>
+                    <label for="message" id="YourMSG">Your Message: </label>
+                    <br>
+                    <textarea placeholder="Enter Your Message" name="um" id = "um" rows="15" required></textarea>
                 </form>
-            <button type="submit" class="registerbtn">Submit</button>
+                <button type="submit" class="registerbtn" onclick="ContactSuccess()">Submit</button>
             </div>
         </div>
     </div>
     <!-- Contact Us Section End -->   
-    
     <!-- Footer -->
     <footer>   
         <div>
